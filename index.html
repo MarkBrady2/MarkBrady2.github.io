@@ -2,22 +2,50 @@
 layout: default
 ---
 
-<div class="home">
+	
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		<!-- ==============================================
+		HEADER
+		=============================================== -->
+		<header id="home" class="jumbotron bg-image bg-slider" data-slides="{{site.baseurl}}/assets/iStock_11644051_XXXLARGE.jpg" data-speed="5000">
+			
+			<div class="container text-center">
+			
+				<div class="text-slider flexslider">
+						
+					<ul class="slides">
+						<li>
+							<h1>Writing.</h1>
+							<p>What can you tell the world about your passion, your product, your service and yourself?</p>
+						</li>
+					</ul>
+					
+				</div>
+			
+			</div>
+			
+			<span class="prev-slide"><i class="fa fa-angle-left"></i></span>
+			<span class="next-slide"><i class="fa fa-angle-right"></i></span>
+			
+		</header><!--End header -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+		<!-- ==============================================
+		CALL TO ACTION
+		=============================================== -->			
+		<section class="gray-bg cta">
+		
+			<div class="container">
+			
+				<div class="row">
+					<div class="col-md-8 cta-message">
+						<p><strong>Outlines, research, sketches, drafts, organization, composition, annotation, proofing, polish. </strong></p>
+						<p>You’re smart. Expressive. Creative. But there are only so many hours in the day, and writing takes a lot of work.</p>
+						<p>I’ll help you shoulder the load, leaving you to think, create, produce and expound in your own element while the world reads about how smart, talented and flat-out amazing you are.</p>
+						<p><strong>Impress your audience. </strong> Tell a story that resounds.</p>
+					</div>
+				</div><!--End row-->
+				
+			</div><!--End container -->
+			
+		</section><!--End Call to Action -->
