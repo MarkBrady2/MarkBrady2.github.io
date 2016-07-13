@@ -1,52 +1,77 @@
 <!-- ==============================================
 		MAIN NAV
 		=============================================== -->
-		<div id="main-nav" class="navbar navbar-fixed-top">
-			<div class="container">
-			
-				<div class="navbar-header">
-				
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+<div id="main-nav" class="navbar navbar-fixed-top">
+	<div class="container">
+
+		<div class="navbar-header">
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
 						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
-					
-					<!-- ======= LOGO ========-->
-					<a class="navbar-brand" href="{{ site.baseurl }}/">
-						<span class="logo-small"><img src="{{ site.baseurl }}/assets/logo.svg" alt=""/></span>
-						<span class="to-top"><i class="fa fa-arrow-up"></i></span>
-						
-						Resonance Writing Services
-						
-						<!-- ==== Image Logo ==== -->
-						<!--<img class="site-logo" src="assets/logo.png" alt="logo" />-->
-					</a>
-					
-				</div>
-				
-				<div id="site-nav" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="sr-only">
-							<a href="{{site.baseurl}}">Home</a>
-						</li>
-						<li class="active">
-							<a href="{{site.baseUrl}}/" class="active">Home</a>
-						</li>
+
+			<!-- ======= LOGO ========-->
+			<a class="navbar-brand" href="{{ site.baseurl }}/">
+				<span class="logo-small"><img width="60px" src="{{ site.baseurl }}/assets/logo.svg" alt=""/></span>
+				<span class="to-top"><i class="fa fa-arrow-up"></i></span> Resonance Writing Services
+
+				<!-- ==== Image Logo ==== -->
+				<!--<img class="site-logo" src="assets/logo.png" alt="logo" />-->
+			</a>
+
+		</div>
+
+		<div id="site-nav" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="sr-only">
+					<a href="{{site.baseurl}}">Home</a>
+				</li>
+				{% if page.active == "home" %}
+				<li class="active">
+					{% else %}
+					<li>
+						{% endif %}
+						<a href="{{site.baseUrl}}/">Home</a>
+					</li>
+
+					{% if page.active == "services" %}
+					<li class="active">
+						{% else %}
 						<li>
+							{% endif %}
 							<a href="{{site.baseUrl}}/services">Services</a>
 						</li>
-						<li>
-							<a href="{{site.baseUrl}}/why-resonate">Why Resonate?</a>
-						</li>
-						<li>
-							<a href="{{site.baseUrl}}/about-me">About Me</a>
-						</li>
-						<li>
-							<a href="{{site.baseUrl}}/contact-me">Contact</a>
-						</li>
-					
-					</ul>
-				</div><!--End navbar-collapse -->
-				
-			</div><!--End container -->
-			
-		</div><!--End main-nav -->
+
+						{% if page.active == "why-resonate" %}
+						<li class="active">
+							{% else %}
+							<li>
+								{% endif %}
+								<a href="{{site.baseUrl}}/why-resonate">Why Resonate?</a>
+							</li>
+
+							{% if page.active == "why-resonate" %}
+							<li class="active">
+								{% else %}
+								<li>
+									{% endif %}
+									<a href="{{site.baseUrl}}/about-me">About Me</a>
+								</li>
+
+								{% if page.active == "contact" %}
+								<li class="active">
+									{% else %}
+									<li>
+										{% endif %}
+										<a href="{{site.baseUrl}}/contact-me">Contact</a>
+									</li>
+
+			</ul>
+		</div>
+		<!--End navbar-collapse -->
+
+	</div>
+	<!--End container -->
+
+</div>
+<!--End main-nav -->
