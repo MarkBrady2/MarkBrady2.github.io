@@ -28,43 +28,36 @@
 				</li>
 				{% if page.active == "home" %}
 				<li class="active">
-					{% else %}
-					<li>
-						{% endif %}
-						<a href="{{site.baseUrl}}/">Home</a>
-					</li>
+				{% else %}
+				<li>
+					{% endif %}
+					<a href="{{site.baseUrl}}/">Home</a>
+				</li>
 
-					{% if page.active == "services" %}
-					<li class="active">
-						{% else %}
-						<li>
-							{% endif %}
-							<a href="{{site.baseUrl}}/services">Services</a>
-						</li>
+				{% if page.active == "services" %}
+				<li class="active">
+				{% else %}
+				<li>
+					{% endif %}
+					<a href="{{site.baseUrl}}/services">Services</a>
+				</li>
 
-						{% if page.active == "why-resonate" %}
-						<li class="active">
-							{% else %}
-							<li>
-								{% endif %}
-								<a href="{{site.baseUrl}}/why-resonate">Why Resonate?</a>
-							</li>
+				{% if page.active == "why-resonate" %}
+				<li class="active">
+				{% else %}
+				<li>
+					{% endif %}
+					<a href="{{site.baseUrl}}/why-resonate">Why Resonate?</a>
+				</li>
 
-							{% if page.active == "why-resonate" %}
-							<li class="active">
-								{% else %}
-								<li>
-									{% endif %}
-									<a href="{{site.baseUrl}}/about-me">About Me</a>
-								</li>
+				{% if page.active == "about-me" %}
+				<li class="active">
+				{% else %}
+				<li>
+					{% endif %}
+					<a href="{{site.baseUrl}}/about-me">About Me</a>
+				</li>
 
-								{% if page.active == "contact" %}
-								<li class="active">
-									{% else %}
-									<li>
-										{% endif %}
-										<a href="{{site.baseUrl}}/contact-me">Contact</a>
-									</li>
 
 			</ul>
 		</div>
