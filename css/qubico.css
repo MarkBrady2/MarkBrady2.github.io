@@ -1,3 +1,6 @@
+---
+---
+
 /*--------------------
 -----Main Styles------
 ----------------------*/
@@ -442,6 +445,7 @@ a:focus,
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url('{{site.baseurl}}/assets/iStock_11644051_XXXLARGE.jpg');
     color:#fff;
     padding:0;
     margin-bottom:0;

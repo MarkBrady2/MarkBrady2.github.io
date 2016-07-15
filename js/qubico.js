@@ -56,21 +56,21 @@ $(document).ready(function() {
 	
 	var sliderSpeed = $('.jumbotron').data('speed') ? $('.jumbotron').data('speed') : 5000 ;
 	
-	$('.text-slider li').addClass('animate');
+	// $('.text-slider li').addClass('animate');
 	
-	$('.text-slider').flexslider({
-		animation: 'fade',
-		slideshowSpeed: sliderSpeed,
-		useCSS: true,
-		directionNav:false,
-		controlNav: false,
-		pauseOnAction: false, 
-		pauseOnHover: false,
-		smoothHeight: false,
-		before:function(slider){if($('.jumbotron.bg-slider').length) $('.jumbotron.bg-slider').backstretch("show",slider.animatingTo);},
-		start:function(){$('.text-slider .slides li.flex-active-slide').removeClass('animate');},
-		after:function(){resetAnimation();}
-	});
+	// $('.text-slider').flexslider({
+	// 	animation: 'fade',
+	// 	slideshowSpeed: sliderSpeed,
+	// 	useCSS: true,
+	// 	directionNav:false,
+	// 	controlNav: false,
+	// 	pauseOnAction: false, 
+	// 	pauseOnHover: false,
+	// 	smoothHeight: false,
+	// 	before:function(slider){if($('.jumbotron.bg-slider').length) $('.jumbotron.bg-slider').backstretch("show",slider.animatingTo);},
+	// 	start:function(){$('.text-slider .slides li.flex-active-slide').removeClass('animate');},
+	// 	after:function(){resetAnimation();}
+	// });
 	
 	function resetAnimation(){
 		$('.text-slider .slides li:not(.flex-active-slide)').addClass('animate');
@@ -94,35 +94,7 @@ $(document).ready(function() {
 		if($('.jumbotron .text-slider').length) {$('.jumbotron .text-slider').flexslider('prev'); $('.jumbotron .text-slider').flexslider('play');}
 		else if($('.jumbotron.bg-slider').length) $('.jumbotron.bg-slider').backstretch('prev');
 	})
-	/*============================================
-	iPad Slider
-	==============================================*/
-	$('.ipad-slider').flexslider({
-		prevText: '<i class="fa fa-angle-left"></i>',
-		nextText: '<i class="fa fa-angle-right"></i>',
-		animation: 'slide',
-		slideshowSpeed: 3000,
-		useCSS: true,
-		controlNav: false,
-		pauseOnAction: false, 
-		pauseOnHover: true,
-		smoothHeight: false
-	});
 	
-	/*============================================
-	Post Slider
-	==============================================*/
-	$('.post-slider').flexslider({
-		prevText: '<i class="fa fa-angle-left"></i>',
-		nextText: '<i class="fa fa-angle-right"></i>',
-		animation: 'slide',
-		slideshowSpeed: 3000,
-		useCSS: true,
-		controlNav: true,
-		pauseOnAction: false, 
-		pauseOnHover: true,
-		smoothHeight: false
-	});
 	
 	/*============================================
 	Skills Charts
@@ -365,17 +337,17 @@ $(document).ready(function() {
 		$('#project-preview').slideDown(400);
 		$('#project-preview').addClass('open');
 		
-		$('.imac-slider').flexslider({
-			prevText: '<i class="fa fa-angle-left"></i>',
-			nextText: '<i class="fa fa-angle-right"></i>',
-			animation: 'slide',
-			slideshowSpeed: 3000,
-			useCSS: true,
-			controlNav: false,
-			pauseOnAction: false, 
-			pauseOnHover: true,
-			smoothHeight: false
-		});
+		// $('.imac-slider').flexslider({
+		// 	prevText: '<i class="fa fa-angle-left"></i>',
+		// 	nextText: '<i class="fa fa-angle-right"></i>',
+		// 	animation: 'slide',
+		// 	slideshowSpeed: 3000,
+		// 	useCSS: true,
+		// 	controlNav: false,
+		// 	pauseOnAction: false, 
+		// 	pauseOnHover: true,
+		// 	smoothHeight: false
+		// });
 			
 		$('#project-preview .slides img').load(function(){
 			$('#project-preview .imac-slider').addClass('loaded');
