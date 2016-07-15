@@ -44,16 +44,6 @@ $(document).ready(function() {
 		}
 	});
 
-	/*============================================
-	Contact Form
-	==============================================*/
-	
-	$('#contact-form .form-control').focus(function(){
-		$(this).parents('.form-group').find('.fa').addClass('active');
-	});
-	$('#contact-form .form-control').blur(function(){
-		$(this).parents('.form-group').find('.fa').removeClass('active');
-	});
 	
 	/*============================================
 	Responsive Videos
@@ -449,12 +439,6 @@ $(document).ready(function() {
 		});
 	}
 	
-	/*============================================
-	Placeholder Detection
-	==============================================*/
-	if (!Modernizr.input.placeholder) {
-		$('#contact-form').addClass('no-placeholder');
-	}
 	
 	/*============================================
 	Responsive Submenu
