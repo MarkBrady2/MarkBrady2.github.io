@@ -179,7 +179,7 @@ $(document).ready(function() {
 				}
 			});
 			
-			$('.projects-container .loaded-item .enlarge').colorbox({ maxWidth:"85%", maxHeight:"85%"});
+			//$('.projects-container .loaded-item .enlarge').colorbox({ maxWidth:"85%", maxHeight:"85%"});
 			
 			var i = 1,
 			delay = [];
@@ -404,22 +404,22 @@ $(document).ready(function() {
 		waypointsRefresh();
 	}
 	
-	function justEnlarge(elem) {
+	// function justEnlarge(elem) {
 	
-		var image = elem.find('.enlarge').attr('href');
-		var title = elem.find('.enlarge').attr('title');
+	// 	var image = elem.find('.enlarge').attr('href');
+	// 	var title = elem.find('.enlarge').attr('title');
 		
-		$.colorbox({href:image,title:title, maxWidth:"85%", maxHeight:"85%"});
-	}
+	// 	$.colorbox({href:image,title:title, maxWidth:"85%", maxHeight:"85%"});
+	// }
 	
 	/*Colorbox*/
-	$(".enlarge").colorbox({ maxWidth:"85%", maxHeight:"85%"});
-	$(".colorbox").colorbox({maxWidth:"85%", maxHeight:"85%"});
-	$(".colorbox-video").colorbox({iframe:true,  innerWidth:1200, innerHeight:675,maxWidth:"85%", maxHeight:"85%"});
+	// $(".enlarge").colorbox({ maxWidth:"85%", maxHeight:"85%"});
+	// $(".colorbox").colorbox({maxWidth:"85%", maxHeight:"85%"});
+	// $(".colorbox-video").colorbox({iframe:true,  innerWidth:1200, innerHeight:675,maxWidth:"85%", maxHeight:"85%"});
 	
-	$('.news-media.gallery').each(function(i){
-		$(this).find(".colorbox").colorbox({rel:'group'+i,maxWidth:"85%", maxHeight:"85%"});
-	});
+	// $('.news-media.gallery').each(function(i){
+	// 	$(this).find(".colorbox").colorbox({rel:'group'+i,maxWidth:"85%", maxHeight:"85%"});
+	// });
 	
 	/*============================================
 	Tooltips
